@@ -1,3 +1,5 @@
+# リアルタイム音声
+
 # googlecloud_realtime_speech
 参考リポジトリ
 https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/speech/microphone/transcribe_streaming_infinite.py
@@ -6,13 +8,14 @@ https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/speech/micr
 Google Cloud コンソールにログイン
 プロジェクトを選択  [speech recognition]
 左側のメニューから「IAMと管理」→「サービスアカウント」を選択します。
-# yf-693@speech-recognition-447614.iam.gserviceaccount.com
-# ID: 105247869794243534704
+
 「サービスアカウントを作成」をクリックするか、既存のサービスアカウントを選択します。
 サービスアカウントの詳細画面で「キー」タブをクリックします。
 「鍵を追加」→「新しい鍵を作成」を選択します。
 キーのタイプとして「JSON」を選択し、「作成」をクリックします。
-# speech-recognition-447614-34617aeea7a3.json
+
+speech-recognition-447614-34617aeea7a3.json
+
 JSONファイルが自動的にダウンロードされます。このファイルには秘密鍵情報が含まれているため、安全に保管してください
 
 --
@@ -62,7 +65,7 @@ pip3 install --global-option='build_ext' --global-option='-I/opt/homebrew/Cellar
 [実行]
 python3 speech_recognition.py
 
-※無料トライアル終了している：エラー内容はGoogle Cloud認証情報ファイルが見つからない
+※google側の無料トライアル終了している：エラー内容はGoogle Cloud認証情報ファイルが見つからない
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 --以下でdocker化しようとした手順
 # Docker化したので以下の手順だけで良い
